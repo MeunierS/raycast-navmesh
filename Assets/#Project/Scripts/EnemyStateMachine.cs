@@ -8,7 +8,7 @@ public class EnemyStateMachine
     public IState CurrentState { get; private set; }
     public ChaseState chaseState;
     public PatrolState patrolState;
-    public EnemyStateMachine(NavMeshAgent agent, Transform playerTransform, Enemy enemy)
+    public EnemyStateMachine(Enemy enemy)
     {
         chaseState = new ChaseState(enemy, this);
         patrolState = new PatrolState(enemy, this);

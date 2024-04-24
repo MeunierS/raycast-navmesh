@@ -30,7 +30,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        stateMachine = new EnemyStateMachine(agent, target, this);
+        stateMachine = new EnemyStateMachine(this);
         stateMachine.Initialize(stateMachine.patrolState);
     }
 
