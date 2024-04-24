@@ -7,8 +7,9 @@ using UnityEngine.AI;
 public class GoToTarget : MonoBehaviour
 {
     private NavMeshAgent agent;
-    [SerializeField] private Transform [] targets;
+    [SerializeField] protected Transform[] targets;
     private int index = 0;
+    
     // Start is called before the first frame update
     void Start()
     {
